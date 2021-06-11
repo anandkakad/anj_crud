@@ -8,8 +8,6 @@ public class HandLoomApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HandLoomApplication.class, args);
-		
-		System.out.println("heeloo");
 	}
 
 }
