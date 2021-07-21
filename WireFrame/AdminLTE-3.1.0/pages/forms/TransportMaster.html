@@ -64,14 +64,19 @@
 					<form class="row g-3">
 					<div class="col-md-6">
 						<label for="inputTransportName" class="form-label">&nbsp</label>
-						<select  class="form-control select2" style="width: 100%;">
-						<option>Choose...</option>				
+						<select  id="inputTransportName" name="inputTransportName" class="form-control select2" style="width: 100%;">
+						<option>Choose</option>		
+                        <option>Balaji</option>	
+                        <option>Sharma</option>	
+                        <option>Bindra</option>	
+                        <option>Shreeji</option>	
+                        <option>Biyani</option>							
 						</select>
 				    </div>
 					
 				    <div class="col-md-6">
-						<label for="inputTransportName" class="form-label">Name</label>
-						<input type="Name" class="form-control" id="inputTransportName">
+						<label for="TransportName" class="form-label">Name</label>
+						<input type="Name" class="form-control" id="TransportName">
 				    </div>
 					  
 				  <div class="col-s-12">
@@ -145,3 +150,10 @@
 
 </body>
 </html>
+
+
+<script>
+$('#inputTransportName').change(function() {
+    $('#TransportName').val($('#inputTransportName option:selected').val());
+})
+</script>
