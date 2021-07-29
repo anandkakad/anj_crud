@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BDO Life | Feedback & Inquiries </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/_all.css" rel="stylesheet">
+	<!-- bootstrap-wysiwyg -->
+    <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+	 <!-- bootstrap-datetimepicker -->
+    <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+	
+	<!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="icon" type="image/png" href="../production/images/bdo_favicon.png">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+	<style>
+	.upload-btn-wrapper 
+	{
+	  position: relative;
+	  display: inline-block;
+	}
+
+.upload-btn-wrapper input[type=file]
+	{
+	  font-size: 24px;
+	  width:112px;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  opacity: 0;
+	}
+</style>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span> BDO Life !</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                 <!--<h3>General</h3>-->
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-left"></span></a>
+                    <!--<ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul>-->
+                  </li>
+                  
+                  <li><a href="payment.html"><i class="fa fa-credit-card"></i> Payment <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+                  <li><a href="feedback.html"><i class="fa fa-edit"></i> Feedback <span class="fa fa-chevron-left"></span></a>
+                   
+                  </li>
+                  <li><a><i class="fa fa-cog"></i> Requests <span class="fa fa-chevron-left"></span></span></a>
+                    <ul class="nav child_menu">
+                       <li><a href="update_contact_info.html">Update Contact Information</a></li>
+                      <li><a href="direct_credit_facility_enrollment.html">Direct Credit Facility Enrollment </a></li>
+                      <li><a href="recurring_payment_system_enrollment.html">RPS (Auto Charge) Enrollment </a></li>
+                      <li><a href="pdf_rider_enrollment.html">PDF Rider Enrollment</a></li>
+                      <li><a href="alert_enrollment.html">Alert Enrollment</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="inbox.html"><i class="fa fa-envelope"></i> Inbox <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				  <li><a href="download_forms.html"><i class="fa fa-download"></i> Download Forms <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				   <li><a href="faq.html"><i class="fa fa-download"></i> FAQ <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				  <li><a href="news.html"><i class="fa fa-newspaper-o"></i> News Alerts <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--<div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars nav-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <!--<div class="page-title">
+				<div class="col-md-6 col-sm-6 col-xs-12 form-group top_search">
+				  <div class="breadcrumb_title_left">
+					<h3>Feedback & Inquiries</h3>
+				  </div>
+               </div>
+
+              
+                <div class="col-md-6 col-sm-6 col-xs-12 form-group pull-right top_search">
+                 <div class="breadcrumb_title_right">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><i class="fa fa-home"></i> <a href="#">Home</a></li>
+						<li class="breadcrumb-item">Library</a></li>
+						<li class="breadcrumb-item">Direct Credit Facility Enrollment</a></li>
+					</ol>
+                </div>
+              </div>
+            </div>-->
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Feedback & Inquiries </h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>-->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <form class="form-horizontal form-label-left" novalidate>
+
+                     <!-- <p>
+                      </p>
+                      <span class="section">Personal Info</span>-->
+						<div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Policy Number <span class="required red-color">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="number" id="number" placeholder="Enter Policy Number" name="number" required="required" data-validate-minmax="10,100000" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>                     
+                                          
+                      
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">CallBack Number <span class="required red-color">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="tel" id="telephone" name="phone" placeholder="Enter Mobile Number" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+					  
+					<div class=" no-margin item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="callbacktime">CallBack Time <span class="required red-color">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class='col-sm-6 no-padding'>
+                   
+							<div class="form-group">
+								<div class='input-group date' id='myDatepicker3'>
+									<input type='text' required="required" placeholder="From Time " class="form-control" />
+									<span class="input-group-addon">
+									   <span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+							</div>
+							
+							<div class='col-sm-6 no-padding'>
+                   
+							<div class="form-group">
+								<div class='input-group date' id='myDatepicker3a'>
+									<input type='text' placeholder="To Time" class="form-control" />
+									<span class="input-group-addon">
+									   <span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</div>
+							</div>
+                        </div>
+                      </div> 
+					  
+                      
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email 
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="email" id="email" name="email" placeholder="Enter Email Id" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Confirm Email 
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="email" id="email2" name="confirm_email" placeholder="Confirm The Email Id" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Details 
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <textarea id="textarea" required="required" placeholder="Enter the Details or Message" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                        </div>
+                      </div>
+					  <div class="item form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">Feedback Type <span class="required red-color">*</span>
+						</label>
+						<div class="col-md-6 col-sm-6 col-xs-12"style="padding-top: 9px;" >
+							Feedback <input type="radio" class="flat" name="gender" id="genderM" value="M" checked="" required /> 
+							Inquiries <input type="radio" class="flat" name="gender" id="genderF" value="F" />
+						 
+						</div>
+					  </div>
+					  
+					  
+					  <div class= "item form-group">
+					  <label class="control-label col-md-3 col-sm-3 col-xs-12">Upload Attachment 
+						<a href="#" data-toggle="tooltip" data-placement="right" title="The document should be maximum 2048KB"><i class="fa fa-info-circle fa-2" aria-hidden="true"></i></a></label>
+						  <div class="col-md-6 col-sm-6 col-xs-12"style="padding-top: 9px;" >
+							<div class="upload-btn-wrapper">
+						  <button class="btn">Upload a file</button>
+						  <input type="file" name="myfile" />
+					  </div>
+						  </div>
+					  </div>
+					  
+					  
+					  
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                          <button id="send" type="submit" class="btn btn-success">Submit</button>
+						  <button type="submit" class="btn btn-primary">Cancel</button>
+                        </div>
+                      </div>
+                    </form>
+					
+                  </div>
+
+                </div>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer class="footer_fixed">
+          <div class="">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<ul class="footer_column1">
+						<li style="display:inline-block;"><a href="#" alt="Client Charter" >Client Charter</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Privacy Policy" >Privacy Policy</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Privacy Policy" >Terms and Conditions</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Disclaimer" >Disclaimer</a> &nbsp;&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Disclaimer" >Map</a> &nbsp;&nbsp;|</li>  
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-12 footer_column2">
+            Copyright © C2LBIZ Solutions Pvt Ltd.
+					</div>
+				</div>
+			</div>		
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+	 <!-- bootstrap-datetimepicker -->    
+    <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+  
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	<!-- Initialize datetimepicker -->
+<script>
+    $('#myDatepicker').datetimepicker();
+    
+    $('#myDatepicker2').datetimepicker({
+        format: 'DD.MM.YYYY'
+    });
+    
+    $('#myDatepicker3').datetimepicker({
+        format: 'hh:mm A'
+    });
+    $('#myDatepicker3a').datetimepicker({
+        format: 'hh:mm A'
+    });
+    $('#myDatepicker4').datetimepicker({
+        ignoreReadonly: true,
+        allowInputToggle: true
+    });
+
+    $('#datetimepicker6').datetimepicker();
+    
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false
+    });
+    
+    $("#datetimepicker6").on("dp.change", function(e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    
+    $("#datetimepicker7").on("dp.change", function(e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+</script>
+	
+  </body>
+</html>

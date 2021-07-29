@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shree Poptani Traders</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="icon" type="image/png" href="../production/images/bdo_favicon.png">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+	
+	  
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="no-space navbar nav_title" style="border: 0;">
+              <a href="index.html" <span style="padding-left: 36px;"> <h2>Shree Poptani Traders</h2></span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix profile-pic-margin">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!--<h3>Your last login was June 19,2017 02:30:48 GMT+8</h3>-->
+                <ul class="nav side-menu">
+                   <li><a><i class="fa fa-cog"></i> Master <span class="fa fa-chevron-left"></span></span></a>
+                    <ul class="nav child_menu">
+                     <li><a href="acMaster.html">Account Master</a></li>
+                      <li><a href="itemMaster.html">Item Master </a></li>
+                      <li><a href="transportMaster.html">Transport Master </a></li>
+                      <li><a href="BankMaster.html">Bank Name Master</a></li>
+                      <li><a href="userMaster.html">User Master</a></li>
+					   <li><a href="newrolemaster.html">Role Master</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li><a href=""><i class="fa fa-credit-card"></i> Agency Vouchers <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+                
+                  
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="hide-sidebar-footer sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars nav-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    
+                    <li><a href="#"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Messages&nbsp;</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+				
+				<li role="presentation" class="dropdown hide-last-login-2">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-clock-o"></i> Last Login Details 
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                     
+                        <span>
+                         <span class="time"><b>Your last login was June 19,2017 02:30:48 GMT+8</b></span>
+                        </span>
+                     
+                    </li>
+                  </ul>
+                </li>
+				
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+        
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Account Master</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <p class="text-muted font-13 m-b-30">
+                      
+                    </p>
+					<!-- Start code -->
+					<div class="row">
+              <div class="col-md-4">
+               <div class="card-body">
+                 <div class="form-group">
+
+
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="inputState" class="form-label">Area</label>
+                      <select  class="form-control select2" style="width: 100%;">
+                        <option>All</option>
+                        <option Selected>Area</option>
+                        <option>City</option>
+                        <option>Group</option>
+                      </select>
+                    </div>
+
+                    <div class="col-6">
+                      <label for="inputState" class="form-label">Select Group</label>
+                      <select  class="form-control select2" style="width: 100%;">
+                        <option>Select Group</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Select multiple-->
+                  <div class="form-group">
+                    <label>Opening Balance List</label>
+                    <select multiple class="form-control">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
+                  </div>
+                  <label for="inputState" class="form-label"></label>
+                  <center><button type="submit" class="btn btn-primary">Opening Balance List</button></center>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-8">
+              <div class="row">
+               <div class="col-8">
+                <label for="inputState" class="form-label">Under Group:</label>
+                <select  class="form-control select2" style="width: 100%;">
+                  <option>Under Group:</option>
+                </select>
+              </div>
+
+              <div class="col-4">
+                <label for="inputState" class="form-label"></label>
+                <center><button type="button" class="btn btn-default" data-toggle="modal"data-target="#modal-groupMaster">Group Master</button></center>          
+              </div>
+            </div>
+
+
+
+            <div class="modal fade" id="modal-groupMaster">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Group Master</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="container-fluid"> 
+
+
+
+                      <div class="row">
+                        <div class="col-md-4"> 
+                          <input type="text" class="form-control" id="">
+
+                        </div>
+
+                        <div class="col-md-8">
+
+                          <label for="" class="form-label">Name:</label>      
+
+                          <input type="text" class="form-control" id="">
+
+                          <div class="row">
+                            <div class="col-md-3">
+                              <!-- checkbox -->
+                              <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
+                                  <label for="customCheckbox1" class="custom-control-label">Trading A/C</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <!-- checkbox -->
+                              <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option2">
+                                  <label for="customCheckbox1" class="custom-control-label">P&L A/C</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <!-- checkbox -->
+                              <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option3">
+                                  <label for="customCheckbox1" class="custom-control-label">Balance sheet</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+
+
+
+
+            <div class="col-12">
+              <label for="" class="form-label">A/C Name:</label>
+              <input type="text" class="form-control" id="">
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <label for="inputAddress1" class="form-label">Address1:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Address2:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">City:</label>
+                <select  class="form-control select2" style="width: 100%;">
+                  <option>Select City</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label for="inputAddress2" class="form-label">PIN:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+
+              <div class="col-4">
+               <label for="inputAddress2" class="form-label"></label>
+               <center><button type="button" class="btn btn-default"data-toggle="modal"data-target="#modal-cityMaster">City Master</button></center>
+             </div>
+           </div>
+
+           <div class="modal fade" id="modal-cityMaster">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">City Master</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="container-fluid"> 
+
+
+
+                    <div class="row">
+                      <div class="col-md-4"> 
+                        <input type="text" class="form-control" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-8">
+              <label for="inputState" class="form-label">Area:</label>
+              <select  class="form-control select2" style="width: 100%;">
+                <option>Select Area</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4"> 
+              <label for="inputState" class="form-label"></label>         
+              <center><button type="button" class="btn btn-default"data-toggle="modal"data-target="#modal-areaMaster">Area Master</button></center>
+
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="modal-areaMaster">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Area Master</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="container-fluid"> 
+
+
+
+                    <div class="row">
+                      <div class="col-md-4"> 
+                        <input type="text" class="form-control" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+          <!-- /.modal -->
+
+          <div class="col-md-12">
+            <label for="inputAddress2" class="form-label">Contact No:</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="">
+          </div>
+          <div class="col-md-12">
+            <label for="inputAddress2" class="form-label">TIN:</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="">
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="inputAddress2" class="form-label">Opng Balance:</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="00">
+            </div>
+
+
+            <div class="col-md-4">
+             <label for="inputAddress2" class="form-label"></label>
+             <label class="container">Cr.-Jama
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="col-md-4">
+           <label for="inputAddress2" class="form-label"></label>
+           <label class="container">Dr.-Nave
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Remarks:</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="">
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label for="inputAddress2" class="form-label">Comm(%):</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputAddress2" class="form-label">CD(%):</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+        </div>
+
+        <div class="col-4">
+         <label for="inputAddress2" class="form-label"></label>
+         <center><button type="button" class="btn btn-default"data-toggle="modal"data-target="#modal-default">Print Labels</button></center>
+
+       </div>
+     </div>
+     <div class="col-12">
+      <label for="inputAddress2" class="form-label">Due Days:</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+    </div>
+
+    <label for="inputAddress2" class="form-label"></label>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-12">
+      <div class="card-body" align="center">
+        <a class="btn btn-app">
+          <i class="fas fa-edit"></i> Edit
+        </a>
+        <a class="btn btn-app">
+          <i class="fas fa-play"></i> Play
+        </a>
+        <a class="btn btn-app">
+          <i class="fas fa-pause"></i> Pause
+        </a>
+        <a class="btn btn-app">
+          <i class="fas fa-save"></i> Save
+        </a>
+      </div>
+    </div>
+
+
+  </form>
+
+</div>
+</div>
+					<!-- End code -->
+                    
+					
+					
+                  </div>
+                </div>
+             
+
+              <!-- footer content -->
+  <footer class="main-footer">
+  <div>
+  <table>
+  <tr>
+<button class="btn success">F1-New Account</button>
+<button class="btn info">F2-Change Account</button>
+<button class="btn warning">F3-Delete Account</button>
+<button class="btn danger">F4-Update/Save</button>
+<button class="btn default">F6-Cancel Operation</button>
+<button class="btn default">F10-Close Window</button>
+  </tr>
+  </table>
+
+  </div>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Powered by Prosoul</b> 1.0.0
+    </div>
+  </footer>
+        <!-- /footer content -->
+		 </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+  </body>
+</html>
