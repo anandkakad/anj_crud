@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BDO Life | Recurring Payment System (Auto Charge) Enrollment </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="icon" type="image/png" href="../production/images/bdo_favicon.png">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+	<style>
+		.upload-btn-wrapper 
+		{
+		  position: relative;
+		  display: inline-block;
+		}
+
+	.upload-btn-wrapper input[type=file]
+		{
+		  font-size: 24px;
+		  width:112px;
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  opacity: 0;
+		}
+	</style>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span> BDO Life !</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-left"></span></a>
+                    <!--<ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul>-->
+                  </li>
+                  
+                  <li><a href="payment.html"><i class="fa fa-credit-card"></i> Payment <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+                  <li><a href="feedback.html"><i class="fa fa-edit"></i> Feedback <span class="fa fa-chevron-left"></span></a>
+                   
+                  </li>
+                  <li><a><i class="fa fa-cog"></i> Requests <span class="fa fa-chevron-left"></span></span></a>
+                    <ul class="nav child_menu">
+                       <li><a href="update_contact_info.html">Update Contact Information</a></li>
+                      <li><a href="direct_credit_facility_enrollment.html">Direct Credit Facility Enrollment </a></li>
+                      <li><a href="" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target=".bs-example-modal-lg1">RPS (Auto Charge) Enrollment </a></li>
+                      <li><a href="pdf_rider_enrollment.html">PDF Rider Enrollment</a></li>
+                      <li><a href="alert_enrollment.html">Alert Enrollment</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="inbox.html"><i class="fa fa-envelope"></i> Inbox <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				  <li><a href="download_forms.html"><i class="fa fa-download"></i> Download Forms <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				   <li><a href="faq.html"><i class="fa fa-download"></i> FAQ <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+				   <li><a href="news.html"><i class="fa fa-newspaper-o"></i> News Alerts <span class="fa fa-chevron-left"></span></a>
+                    
+                  </li>
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--<div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>-->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars nav-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                   
+                    <li><a href="#"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <!--<div class="page-title">
+              <div class="title_left">
+                <h3>RPS (Auto Charge) Enrollment</h3>
+              </div>
+
+             
+            </div>-->
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Recurring Payment System (Auto Charge) Enrollment</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>-->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+				  
+				 <p class="text-muted font-13 m-b-30">
+                     <span class="for-red">* Data as of 8/14/2018</span>
+                    </p>
+					
+
+                    <form class="form-horizontal form-label-left" novalidate>
+
+                     <!-- <p>
+                      </p>
+                      <span class="section">Personal Info</span>-->
+						<div class="item form-group">
+							<label class="control-label col-md-3 col-sm-3 col-xs-12">Policy Number <span class="required red-color">*</span></label>
+								<div class="col-md-6 col-sm-6 col-xs-12">
+								  <select class="form-control">
+									<option>Choose Policy Number</option>
+									<option>S5436547658</option>
+									<option>S9876543212</option>
+									<option>S5345678906</option>
+									<option>S7356456789</option>
+								  </select>
+								</div>
+                      </div>
+					   <div class="well" style="overflow: auto">
+								<div class="row">
+                       
+										<div class="col-xs-12 col-sm-12 col-md-6">
+										  <p class="lead"></p>
+										  <div class="table-responsive">
+											<table class="table forwelltables">
+											  <tbody>
+												<tr>
+												  <th style="width:40%">Office Contact</th>
+												  <td>+91-8845133543</td>
+												</tr>
+												<tr>
+												  <th>Mobile Number</th>
+												  <td>+91-8845133126</td>
+												</tr>
+												<tr>
+												  <th>Mailing Address</th>
+												  <td>B-119,Solaris-1 Opp L&T Gate No-6,Saki Vihar</td>
+												</tr>
+											
+											  </tbody>
+											</table>
+										  </div>
+										</div>
+									<!-- /.col -->
+										<div class="col-xs-12 col-sm-12 col-md-6">
+										  <p class="lead" style="visibility:hidden;"></p>
+										  <div class="table-responsive">
+											<table class="table forwelltables">
+											  <tbody>
+												<tr>
+												  <th style="width:40%">Home Contact </th>
+												  <td>+91-8845133234</td>
+												</tr>
+												<tr>
+												  <th>Email ID </th>
+												  <td>abc.xyz@bdo.com</td>
+												</tr>
+												<tr>
+												  <th> </th>
+												  <td></td>
+												</tr>
+											  </tbody>
+											</table>
+										  </div>
+										</div>
+								<!-- /.col -->
+								
+								<div class="col-md-12">
+									<a href="update_contact_info.html" style="text-decoration: underline;font-weight: bold;">Update Contact Information</a> <a href="#" data-toggle="tooltip" data-placement="right" title="Click On the link to update contact information"><i class="fa fa-info-circle fa-2" aria-hidden="true"></i></a> 
+								</div>
+								
+                      </div>
+                      </div>
+			
+					  <h2 class="text-center form-headlines">Credit Card Details</h2>
+					  				  
+					  <div class="item form-group">
+							<label class="control-label col-md-3 col-sm-3 col-xs-12">Credit Card Type <span class="required red-color">*</span></label>
+								<div class="col-md-6 col-sm-6 col-xs-12">
+								  <select class="form-control">
+									<option>Choose Credit Card Type</option>
+									<option>Visa</option>
+									<option>Mastercard</option>
+									<option>JCB</option>
+									<option>Amex</option>
+								  </select>
+								</div>
+                      </div>
+					  
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12"  for="number">Credit Card Number <span class="required red-color">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="number" id="number" name="number" placeholder="Enter Credit Card Number" required="required" data-validate-minmax="10,100000" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>   
+					  
+					  <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12"  for="card-name">Name on Card <span class="required red-color">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="card-name" placeholder="Enter name of card" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+						  
+						   <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12"  for="card-name">Expiration Date <span class="required red-color">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="expiratiion_date" placeholder="MM/YY" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+					  
+					   <h2 class="text-center form-headlines">Recurring Subsequent Premium Payment </h2>
+					   
+					    <div class="well" style="overflow: auto">
+							<div class="row">
+                       
+										<div class="col-xs-12 col-sm-12 col-md-6">
+										  <p class="lead"></p>
+										  <div class="table-responsive">
+											<table class="table forwelltables no-margin">
+											  <tbody>
+												<tr>
+												  <th style="width:50%">Premium Amount</th>
+												  <td>PHP 31,483</td>
+												</tr>
+												<tr>
+												  <th> </th>
+												  <td></td>
+												</tr>
+											
+											  </tbody>
+											</table>
+										  </div>
+										</div>
+										
+									<!-- /.col -->
+										<div class="col-xs-12 col-sm-12 col-md-6">
+										  <p class="lead" style="visibility:hidden;"></p>
+										  <div class="table-responsive">
+											<table class="table forwelltables no-margin">
+											  <tbody>
+												<tr>
+												  <th style="width:50%">Payment Mode </th>
+												  <td>Monthly</td>
+												</tr>
+											
+												<tr>
+												  <th> </th>
+												  <td></td>
+												</tr>
+											  </tbody>
+											</table>
+										  </div>
+										</div>
+								<!-- /.col -->
+							</div>
+                      </div>
+				                                          
+                       <div class= "item form-group">
+							<label class="control-label col-md-3 col-sm-3 col-xs-12">Upload Attachment 
+							<a href="#" data-toggle="tooltip" data-placement="right" title="The document should be maximum 2048KB"><i class="fa fa-info-circle fa-2" aria-hidden="true"></i></a></label>
+							  <div class="col-md-6 col-sm-6 col-xs-12"style="padding-top: 9px;" >
+								<div class="upload-btn-wrapper">
+								  <button class="btn">Upload a file</button>
+								  <input type="file" name="myfile" />
+								</div>
+							  </div>
+						</div>
+			                     
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                          <button id="send" type="submit" class="btn btn-success">Submit</button>
+						  <button type="submit" class="btn btn-primary">Cancel</button>
+                        </div>
+                      </div>
+					  
+					  <div class="col-md-12 col-sm-12 col-xs-12">
+						<p class="for-all-request">“All Request performed under this module are documented electronically.”</p>
+					</div>
+					  
+                    </form>	
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+		
+		
+		<!-- 405-Republic-Act-modal-Recurring-->
+		 <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                          </button>-->
+                          <h4 class="modal-title modal-heading" id="myModalLabel">Republic Act No. 1405</h4>
+                        </div>
+                        <div class="modal-body login-modal-scroll">
+						<div class="x_content">
+						<div class="row">
+							  <div class="col-md-12">
+								<p>
+									What is Lorem Ipsum?
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+								<p>
+									What is Lorem Ipsum?
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+								<p>
+									What is Lorem Ipsum?
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+								<p>
+									What is Lorem Ipsum?
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+
+							  </div>
+						</div>
+					
+                  </div>
+				  
+				  
+				  
+                          <h5 style="text-align:center;">Clicking <b style>'Pay'</b> button, you will be directed to another site. Please ensure you have a copy of your policy number/s and its corresponding premium due.</h5>
+                          
+                        </div>
+                        <div class="modal-footer">
+						  <a href="" class="btn btn-primary" data-dismiss="modal" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target=".bs-example-modal-lg2">OK</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+		
+		<!-- 405-Republic-Act-modal-Recurring-->
+		 <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                          </button>-->
+                          <h4 class="modal-title modal-heading" id="myModalLabel">Confirmation !</h4>
+                        </div>
+                        <div class="modal-body">
+						
+                          <h5 style="text-align:center; font-weight:bold;">Kindly note that you need to provide your credit card details to enroll for recurring payment.</h5>
+                          
+                        </div>
+                        <div class="modal-footer">
+						  <a href="" class="btn btn-success" data-dismiss="modal" data-backdrop="static" data-keyboard="false" data-toggle="modal">Agree</a>
+						  <a href="index.html" class="btn btn-primary" data-backdrop="static" data-keyboard="false">Disagree</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+		
+		
+		
+
+        <!-- footer content -->
+         <footer>
+          <div class="">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<ul class="footer_column1">
+						<li style="display:inline-block;"><a href="#" alt="Client Charter" >Client Charter</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Privacy Policy" >Privacy Policy</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Privacy Policy" >Terms and Conditions</a>&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Disclaimer" >Disclaimer</a> &nbsp;&nbsp;|</li>
+						<li style="display:inline-block;"><a href="#" alt="Disclaimer" >Map</a> &nbsp;&nbsp;|</li>  
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-12 footer_column2">
+            Copyright © C2LBIZ Solutions Pvt Ltd.
+					</div>
+				</div>
+			</div>		
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>
