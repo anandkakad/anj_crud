@@ -2621,6 +2621,18 @@ a.btn-danger {
     border: 1px solid #c2ca24;
 	
 }
+.btn-add {
+    background: #004EA8;
+    border: 1px solid #004EA8;
+	color: white;
+	
+}
+.btn-shortbtn {
+    background: #e7e8ca;
+    border: 1px solid #e7e8ca;
+	color: white;
+	
+}
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
 background-color :#787D12;

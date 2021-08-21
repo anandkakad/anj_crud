@@ -226,7 +226,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>User Master</small></h2>
+                    <h2>User Master</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -244,12 +244,125 @@
 
       <div class="container-fluid">
         <!-- SELECT2 EXAMPLE -->
+		<div style="position: absolute; right: 0;"> <button type="submit" class="btn btn-add" data-toggle="modal"data-target="#modal-cityMaster" >Add New User</button></div>
         <div class="card card-default">
           <div class="card-header">
-            <h3 class="card-title"></h3>
-                   </div>
+            <h2 class="card-title">Search User</h2> 
+			</div>
            <div class="card-body">
-             <div class="form-group">
+		   <div class="form-group">
+		   
+		   
+		   <div class="container">
+  
+			  <div class="panel panel-default">
+				<div class="panel-body">
+				<div class="col-12">
+					<label for="inputAddress2" class="form-label">User Name</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Enter username">
+				  </div>
+					  
+				  <div class="form-group">
+					<div class="col-md-4" style="margin-top:10px;">
+			
+					<button type="submit" class="btn btn-primary">Search</button>
+			  </div>	 
+			  </div>
+								
+				</div>
+			  </div>
+			</div>
+		   
+		   		  <table id="example2" class="table table-bordered table-hover" style="table-layout: auto;width: 100%;">
+				   <thead>
+                  <tr>
+                    <th>User Name</th>
+					<th style="text-align:left">USER-ID</th>
+					<th style="text-align:left">Role Type</th>
+					<th style="text-align:left">Operation</th>
+                   </tr>
+                  </thead>
+				     <tbody>
+                  <tr>
+                   <td>Sunil Kumar</td>
+				    <td>sunil@kumar</td>
+				    <td>Supervisor</td>
+					
+                   <td style="text-align:left"><button type="submit" class="btn btn-primary" data-toggle="modal"data-target="#modal-cityEditMaster" >Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Vivek Talokar</td>
+				     <td>-</td>
+				    <td>Admin</td>
+                   <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				   <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Rupesh choudary</td>
+				    <td>-</td>
+				    <td>SuperAdmin</td>
+                    <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Lalit Mahajan</td>
+				    <td>-</td>
+				    <td>Accountant</td>
+                   <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Ankit Chore</td>
+				    <td>-</td>
+				    <td>Admin</td>
+                     <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Mansi Pal</td>
+				    <td>-</td>
+				    <td>Manager</td>
+                    <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  <tr>
+                   <td>Nandkishor Lal</td>
+				    <td>nand@lal</td>
+				    <td>Admin</td>
+                  <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  
+				  <tr>
+                   <td>Ruhani Shah</td> 
+				   <td>shah@1234</td>
+				    <td>Admin</td>
+                   <td style="text-align:left"><button type="submit" class="btn btn-primary">Edit</button>
+				     <button type="submit" class="btn btn-primary" onclick="confirmAction();">Delete</button></td>
+                  </tr>
+				  
+				  </tbody>
+				  </table>
+		    
+		   
+		   		   
+		   </div>
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+           <!--   <div class="form-group">
 					<form class="row g-3">
 				  <div class="col-md-6">
 					<label for="inputEmail4" class="form-label">UserId</label>
@@ -281,7 +394,7 @@
 				 </div>
 				</form>
 										
-            </div>
+            </div> -->
           </div>
         </div>
 </div>
@@ -293,17 +406,144 @@
                 </div>
              
 
+
+
+  <div class="modal fade" id="modal-cityMaster">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" style="color:white">Add User</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="container-fluid"> 
+
+                    <div class="row">
+                     <div class="form-group">
+					<form class="row g-3">
+				  <div class="col-md-6">
+					<label for="inputEmail4" class="form-label">UserId</label>
+					<input type="text" class="form-control" id="inputEmail4">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputPassword4" class="form-label">Password</label>
+					<input type="password" class="form-control" id="inputPassword4">
+				  </div>
+				
+				  <div class="col-12">
+					<label for="inputAddress2" class="form-label">Full Name</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="First Name,Middel name,Last Name">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputState" class="form-label">Role Type</label>
+					<select  class="form-control select2" style="width: 100%;">
+					  <option>Choose...</option>
+					  <option Selected>Super Admin</option>
+					  <option>Admin</option>
+					  <option>Clerk</option>
+					</select>
+				  </div>
+							
+				  <div class="col-12">
+				  <div><hr></div>
+					<center><button type="submit" class="btn btn-primary">SUBMIT</button></center>
+					
+				 </div>
+				</form>
+										
+            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+<!-- Edit model -->
+
+ <div class="modal fade" id="modal-cityEditMaster">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" style="color:white">Add User</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="container-fluid"> 
+
+                    <div class="row">
+                     <div class="form-group">
+					<form class="row g-3">
+				  <div class="col-md-6">
+					<label for="inputEmail4" class="form-label">UserId</label>
+					<input type="email" class="form-control" id="inputEmail4" value="sunil@kumar">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputPassword4" class="form-label">Password</label>
+					<input type="password" class="form-control" id="inputPassword4">
+				  </div>
+				
+				  <div class="col-12">
+					<label for="inputAddress2" class="form-label">Full Name</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="First Name,Middel name,Last Name" value="Sunil Kumar">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputState" class="form-label">Role Type</label>
+					<select  class="form-control select2" style="width: 100%;">
+					  <option>Choose...</option>
+					  <option>Super Admin</option>
+					  <option>Admin</option>
+					  <option>Clerk</option> 
+					  <option  Selected>Supervisor</option>
+					  
+					</select>
+				  </div>
+							
+				  <div class="col-12">
+				  <div><hr></div>
+					<center><button type="submit" class="btn btn-primary">SUBMIT</button></center>
+					
+				 </div>
+				</form>
+										
+            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
               <!-- footer content -->
   <footer class="main-footer">
   <div>
   <table>
   <tr>
-<button class="btn success">F1-New Account</button>
-<button class="btn info">F2-Change Account</button>
-<button class="btn warning">F3-Delete Account</button>
-<button class="btn danger">F4-Update/Save</button>
-<button class="btn default">F6-Cancel Operation</button>
-<button class="btn default">F10-Close Window</button>
+<button class="btn btn-shortbtn">F1-New Account</button>
+<button class="btn btn-shortbtn">F2-Change Account</button>
+<button class="btn btn-shortbtn">F3-Delete Account</button>
+<button class="btn btn-shortbtn">F4-Update/Save</button>
+<button class="btn btn-shortbtn">F6-Cancel Operation</button>
+<button class="btn btn-shortbtn">F10-Close Window</button>
   </tr>
   </table>
 
@@ -321,6 +561,22 @@
       </div>
     </div>
 
+
+<script>
+function myFunction() {
+  alert("Successfully Submitted! Your Registration number is 101");
+}
+
+function confirmAction() {
+        let confirmAction = confirm("Are you sure to delete?");
+        if (confirmAction) {
+          alert("Action successfully executed");
+        } else {
+          alert("Action canceled");
+        }
+      }
+
+</script>
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
